@@ -26,3 +26,15 @@
 # # ■ Порахуйте скільки разів розділові знаки зустрічаються в тексті;
 # # ■ Порахуйте кількість знаків оклику в тексті.
 
+str=(input("Введіть будь який рядок "))
+letters_count = 0
+numbers_count = 0
+
+for symbol in str:
+    if symbol.isalpha():
+        letters_count+=1
+    elif symbol.isdigit():
+        numbers_count +=1
+print("Кількість букв ", letters_count)
+print("Кількість цифр ", numbers_count)
+
