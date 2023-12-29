@@ -71,6 +71,41 @@ print(sentence[::-1])
 print(sentence[::-2])
 print(len(sentence))
 
+# additional task
+sentence1 = input("Введіть будь який рядок ")
+# Верхній регістр початкових букв
+print(sentence1.title())
+# Кількість цифр
+numbers_count = 0
+for symbol in sentence1:
+    if symbol.isdigit():
+        numbers_count +=1
+print("Кількість цифр ", numbers_count)
+
+# Кількість розділових знаків
+countsym = 0
+for letter in sentence1:
+    if letter == ",":
+        countsym+=1
+    elif letter == ";":
+        countsym += 1
+    elif letter == "-":
+        countsym += 1
+    elif letter == ":":
+        countsym += 1
+print("Кількість розділових знаків ",countsym)
+
+# Кількість !
+count = 0
+for symbol in sentence1:
+    if symbol =="!":
+        count +=1
+print("Кількість ! ", count)
+
+
+
+
+
 
 
 
