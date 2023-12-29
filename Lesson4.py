@@ -50,11 +50,11 @@
 # print("Кількість символів у рядку", symbol_count)
 
 #3
-str=(input("Введіть будь який рядок "))
+text=(input("Введіть будь який рядок "))
 search_word=(input("Введіть слово для пошуку "))
 replace_word=(input("Введіть слово для заміни "))
-newstr = str.replace("search_word", "replace_word")
-print(newstr)
+newtext = text.replace("search_word", "replace_word")
+print(newtext)
 
 
 
