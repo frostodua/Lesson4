@@ -26,35 +26,41 @@
 # # ■ Порахуйте скільки разів розділові знаки зустрічаються в тексті;
 # # ■ Порахуйте кількість знаків оклику в тексті.
 
-# #1
-# str=(input("Введіть будь який рядок "))
-# letters_count = 0
-# numbers_count = 0
-#
-# for symbol in str:
-#     if symbol.isalpha():
-#         letters_count+=1
-#     elif symbol.isdigit():
-#         numbers_count +=1
-# print("Кількість букв ", letters_count)
-# print("Кількість цифр ", numbers_count)
-#
-# #2
-# str=(input("Введіть будь який рядок "))
-# symbol=(input("Введіть будь який символ "))
-# symbol_count=0
-#
-# for char in str:
-#     if char == symbol:
-#         symbol_count+=1
-# print("Кількість символів у рядку", symbol_count)
+#1
+str=(input("Введіть будь який рядок "))
+letters_count = 0
+numbers_count = 0
+
+for symbol in str:
+    if symbol.isalpha():
+        letters_count+=1
+    elif symbol.isdigit():
+        numbers_count +=1
+print("Кількість букв ", letters_count)
+print("Кількість цифр ", numbers_count)
+
+#2
+str=(input("Введіть будь який рядок "))
+symbol=(input("Введіть будь який символ "))
+symbol_count=0
+
+for char in str:
+    if char == symbol:
+        symbol_count+=1
+print("Кількість символів у рядку", symbol_count)
 
 #3
-text=(input("Введіть будь який рядок "))
-search_word=(input("Введіть слово для пошуку "))
-replace_word=(input("Введіть слово для заміни "))
-newtext = text.replace("search_word", "replace_word")
-print(newtext)
+text = input("Введіть будь який рядок: ")
+search_word = input("Введіть слово для пошуку: ")
+replace_word = input("Введіть слово для заміни: ")
+text = text.replace(search_word, replace_word)
+print(text)
+
+
+
+
+
+
 
 
 
